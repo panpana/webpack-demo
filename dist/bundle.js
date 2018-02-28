@@ -115,6 +115,18 @@ eval("module.exports = function(module) {\r\n\tif (!module.webpackPolyfill) {\r\
 
 /***/ }),
 
+/***/ "./src/foo.js":
+/*!********************!*\
+  !*** ./src/foo.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function(){\n    return \"hello~ I'm panpan\"\n});\n\n\n//# sourceURL=webpack:///./src/foo.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -123,7 +135,7 @@ eval("module.exports = function(module) {\r\n\tif (!module.webpackPolyfill) {\r\
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nalert(1)\n\nfunction component () {\n    var element = jquery__WEBPACK_IMPORTED_MODULE_1___default()('<div></div>');\n  \n    /* lodash is required for the next line to work */\n    element.html(lodash__WEBPACK_IMPORTED_MODULE_0___default.a.join(['Hello','webpack'], ' '))\n  \n    return element.get(0);\n  }\n  \n  document.body.appendChild(component());\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _foo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./foo */ \"./src/foo.js\");\n\n\n\n\nalert(1)\n\nfunction component () {\n    var element = jquery__WEBPACK_IMPORTED_MODULE_1___default()('<div></div>');\n  \n    /* lodash is required for the next line to work */\n    element.html(lodash__WEBPACK_IMPORTED_MODULE_0___default.a.join(['Hello','webpack'], ' '))\n  \n    return element.get(0);\n  }\n  \n  document.body.appendChild(component());\n\n  console.log(_foo__WEBPACK_IMPORTED_MODULE_2__[\"default\"])\n  console.log(Object(_foo__WEBPACK_IMPORTED_MODULE_2__[\"default\"])())\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

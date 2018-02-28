@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import $ from 'jquery'
+import foo from './foo'
 
 alert(1)
 
@@ -13,3 +14,6 @@ function component () {
   }
   
   document.body.appendChild(component());
+
+  console.log(foo)
+  console.log(foo())
