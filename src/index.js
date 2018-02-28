@@ -1,6 +1,8 @@
 import _ from 'lodash';
 import $ from 'jquery'
 
+alert(1)
+
 function component () {
     var element = $('<div></div>');
   
