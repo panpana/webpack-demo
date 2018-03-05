@@ -11,7 +11,7 @@ class Welcome extends React.Component {
             date: new Date(),
             test: 'constructor'
         })
-     },5000)
+     },1000)
 
     console.log("我应经在 constructor 里将 props 和 state 初始化好了")
   }
