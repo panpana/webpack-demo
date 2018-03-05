@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import './reset.css'
 import 'normalize.css'
-import ToDoInput from './ToDoInput'
-import ToDoItem from './ToDoItem'
+import TodoInput from './TodoInput'
+import TodoItem from './TodoItem'
 
 class App extends Component {
     constructor(props){
@@ -22,7 +22,7 @@ class App extends Component {
             return(
               
                       <li>
-                        <ToDoItem todo={item} />
+                        <TodoItem todo={item} />
                       </li>
             )
           })
@@ -30,7 +30,7 @@ class App extends Component {
       <div className="App">
         <h1>我的待办</h1>
         <div className="inputWrapper">
-          <ToDoInput content={this.state.newTodo}/>
+          <TodoInput content={this.state.newTodo}/>
         </div>
         <ol>
           {todos} 
