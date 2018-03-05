@@ -6,9 +6,9 @@ export default class TodoInput extends Component{
                 onKeyPress={this.submit.bind(this)}/>
     }
     submit(e){
-        if (e.key === 'Enter') {
-          this.props.onSubmit.call()
-          console.log("按回车啦")
+            if (e.key === 'Enter') {
+            this.props.onSubmit(e)
+            console.log("按回车啦")
+        }
     }
-}
 }
